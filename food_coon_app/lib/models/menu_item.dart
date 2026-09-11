@@ -1,0 +1,45 @@
+class MenuItem {
+  final int id;
+  final int categoryId;
+  final String name;
+  final String description;
+  final double price;
+  final String imageUrl;
+  final bool isVeg;
+  final bool isAvailable;
+
+  MenuItem({
+    required this.id,
+    required this.categoryId,
+    required this.name,
+    required this.description,
+    required this.price,
+    required this.imageUrl,
+    required this.isVeg,
+    required this.isAvailable,
+  });
+
+  factory MenuItem.fromJson(Map<String, dynamic> json) {
+    return MenuItem(
+      id: json['id'] as int,
+      categoryId: json['categoryId'] as int,
+      name: json['name'] as String,
+      description: json['description'] as String? ?? '',
+      price: (json['price'] as num).toDouble(),
+      imageUrl: json['imageUrl'] as String? ?? '',
+      isVeg: json['isVeg'] as bool? ?? false,
+      isAvailable: json['isAvailable'] as bool? ?? true,
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+        'id': id,
+        'categoryId': categoryId,
+        'name': name,
+        'description': description,
+        'price': price,
+        'imageUrl': imageUrl,
+        'isVeg': isVeg,
+        'isAvailable': isAvailable,
+      };
+}
