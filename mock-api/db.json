@@ -1,9 +1,23 @@
 {
   "users": [
-    { "id": 1, "role": "customer", "name": "John Doe", "email": "john@email.com", "phone": "+1234567890" }
+    {
+      "id": 1,
+      "role": "customer",
+      "name": "John Doe",
+      "email": "john@email.com",
+      "phone": "+1234567890"
+    }
   ],
   "addresses": [
-    { "id": 1, "userId": 1, "label": "Home", "line1": "123 Main St", "city": "Brooklyn", "lat": 40.6782, "lng": -73.9442 }
+    {
+      "id": 1,
+      "userId": 1,
+      "label": "Home",
+      "line1": "123 Main St",
+      "city": "Brooklyn",
+      "lat": 40.6782,
+      "lng": -73.9442
+    }
   ],
   "restaurants": [
     {
@@ -18,7 +32,10 @@
       "openingTime": "10:00",
       "closingTime": "22:00",
       "rating": 4.5,
-      "cuisines": ["Italian", "Pizza"]
+      "cuisines": [
+        "Italian",
+        "Pizza"
+      ]
     },
     {
       "id": 2,
@@ -32,21 +49,85 @@
       "openingTime": "11:00",
       "closingTime": "21:00",
       "rating": 4.2,
-      "cuisines": ["Asian", "Noodles"]
+      "cuisines": [
+        "Asian",
+        "Noodles"
+      ]
     }
   ],
   "menuCategories": [
-    { "id": 1, "restaurantId": 1, "name": "Starters" },
-    { "id": 2, "restaurantId": 1, "name": "Mains" },
-    { "id": 3, "restaurantId": 2, "name": "Ramen" },
-    { "id": 4, "restaurantId": 2, "name": "Sides" }
+    {
+      "id": 1,
+      "restaurantId": 1,
+      "name": "Starters"
+    },
+    {
+      "id": 2,
+      "restaurantId": 1,
+      "name": "Mains"
+    },
+    {
+      "id": 3,
+      "restaurantId": 2,
+      "name": "Ramen"
+    },
+    {
+      "id": 4,
+      "restaurantId": 2,
+      "name": "Sides"
+    }
   ],
   "menuItems": [
-    { "id": 1, "categoryId": 1, "name": "Bruschetta", "description": "Grilled bread, tomato, basil", "price": 6.99, "imageUrl": "https://picsum.photos/300?random=10", "isVeg": true, "isAvailable": true },
-    { "id": 2, "categoryId": 2, "name": "Margherita Pizza", "description": "Classic cheese and tomato pizza", "price": 12.99, "imageUrl": "https://picsum.photos/300?random=11", "isVeg": true, "isAvailable": true },
-    { "id": 3, "categoryId": 2, "name": "Spaghetti Bolognese", "description": "Pasta with beef ragù", "price": 14.99, "imageUrl": "https://picsum.photos/300?random=12", "isVeg": false, "isAvailable": true },
-    { "id": 4, "categoryId": 3, "name": "Tonkotsu Ramen", "description": "Rich pork broth, chashu, egg", "price": 15.99, "imageUrl": "https://picsum.photos/300?random=13", "isVeg": false, "isAvailable": true },
-    { "id": 5, "categoryId": 3, "name": "Shoyu Ramen", "description": "Soy-based broth, chicken, bamboo", "price": 13.99, "imageUrl": "https://picsum.photos/300?random=14", "isVeg": false, "isAvailable": true }
+    {
+      "id": 1,
+      "categoryId": 1,
+      "name": "Bruschetta",
+      "description": "Grilled bread, tomato, basil",
+      "price": 6.99,
+      "imageUrl": "https://picsum.photos/300?random=10",
+      "isVeg": true,
+      "isAvailable": true
+    },
+    {
+      "id": 2,
+      "categoryId": 2,
+      "name": "Margherita Pizza",
+      "description": "Classic cheese and tomato pizza",
+      "price": 12.99,
+      "imageUrl": "https://picsum.photos/300?random=11",
+      "isVeg": true,
+      "isAvailable": true
+    },
+    {
+      "id": 3,
+      "categoryId": 2,
+      "name": "Spaghetti Bolognese",
+      "description": "Pasta with beef ragù",
+      "price": 14.99,
+      "imageUrl": "https://picsum.photos/300?random=12",
+      "isVeg": false,
+      "isAvailable": true
+    },
+    {
+      "id": 4,
+      "categoryId": 3,
+      "name": "Tonkotsu Ramen",
+      "description": "Rich pork broth, chashu, egg",
+      "price": 15.99,
+      "imageUrl": "https://picsum.photos/300?random=13",
+      "isVeg": false,
+      "isAvailable": true
+    },
+    {
+      "id": 5,
+      "categoryId": 3,
+      "name": "Shoyu Ramen",
+      "description": "Soy-based broth, chicken, bamboo",
+      "price": 13.99,
+      "imageUrl": "https://picsum.photos/300?random=14",
+      "isVeg": false,
+      "isAvailable": true
+    }
   ],
   "orders": [
     {
@@ -66,13 +147,42 @@
     }
   ],
   "orderItems": [
-    { "id": 1, "orderId": 1, "menuItemId": 2, "quantity": 1, "unitPrice": 12.99, "notes": "" },
-    { "id": 2, "orderId": 1, "menuItemId": 3, "quantity": 1, "unitPrice": 14.99, "notes": "no onions" }
+    {
+      "id": 1,
+      "orderId": 1,
+      "menuItemId": 2,
+      "quantity": 1,
+      "unitPrice": 12.99,
+      "notes": ""
+    },
+    {
+      "id": 2,
+      "orderId": 1,
+      "menuItemId": 3,
+      "quantity": 1,
+      "unitPrice": 14.99,
+      "notes": "no onions"
+    }
   ],
   "payments": [
-    { "id": 1, "orderId": 1, "method": "card", "status": "pending", "amount": 33.21, "createdAt": "2026-09-11T12:00:00Z" }
+    {
+      "id": 1,
+      "orderId": 1,
+      "method": "card",
+      "status": "pending",
+      "amount": 33.21,
+      "createdAt": "2026-09-11T12:00:00Z"
+    }
   ],
   "drivers": [
-    { "id": 10, "role": "driver", "name": "Mike", "phone": "+3333333333", "lat": 40.6790, "lng": -73.9430, "isAvailable": true }
+    {
+      "id": 10,
+      "role": "driver",
+      "name": "Mike",
+      "phone": "+3333333333",
+      "lat": 40.6790,
+      "lng": -73.9430,
+      "isAvailable": true
+    }
   ]
 }
